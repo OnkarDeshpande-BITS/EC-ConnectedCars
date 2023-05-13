@@ -23,7 +23,10 @@
 - Device to Cloud (For vehicle health monitoring)
   python vehicle_health.py --topic device/car1/health --ca_file %USERPROFILE%\client-device-cert\Amazon-root-CA-1.pem --cert %USERPROFILE%\client-device-cert\device.pem.crt --key %USERPROFILE%\client-device-cert\private.pem.key --endpoint azqhb3vhjca36-ats.iot.us-east-1.amazonaws.com 
 - Device to Edge gateway  
-  (For Vehicle Health Monitoring) 
-  python vehicle_health_edge_pub.py --thing_name Car1 --topic device/Car1/health --message "Car Health status" --ca_file %USERPROFILE%\client-device-cert\Amazon-root-CA-1.pem  --cert %USERPROFILE%\client-device-cert\device.pem.crt --key %USERPROFILE%\client-device-cert\private.pem.key --region us-east-1 --verbosity Warn --max_pub_ops 20 
-  (For Vehicle Situation Alert) 
-  python vehicle_alert.py --thing_name Car1 --topic device/Car1/alerts/situation --message "Situation Message" --ca_file %USERPROFILE%\client-device-cert\Amazon-root-CA-1.pem  --cert %USERPROFILE%\client-device-cert\device.pem.crt --key %USERPROFILE%\client-device-cert\private.pem.key --region us-east-1 --verbosity Warn --max_pub_ops 12 
+  (For Vehicle Health Monitoring)  
+  
+  python vehicle_health_edge_pub.py --thing_name Car1 --topic device/Car1/health --message "Car Health status" --ca_file %USERPROFILE%\client-device-cert\Amazon-root-CA-1.pem  --cert %USERPROFILE%\client-device-cert\device.pem.crt --key %USERPROFILE%\client-device-cert\private.pem.key --region us-east-1 --verbosity Warn --max_pub_ops 20  
+  
+  (For Vehicle Situation Alert)  
+  
+  python vehicle_alert.py --thing_name Car1 --topic device/Car1/alerts/situation --message "Situation Message" --ca_file %USERPROFILE%\client-device-cert\Amazon-root-CA-1.pem  --cert %USERPROFILE%\client-device-cert\device.pem.crt --key %USERPROFILE%\client-device-cert\private.pem.key --region us-east-1 --verbosity Warn --max_pub_ops 12  
